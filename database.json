@@ -1,0 +1,26 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Educação Financeira 1",
+      "description": "Curso sobre educação financeira para iniciantes",
+      "image": "https://link-para-a-imagem/",
+      "teacherName": "Alex Diego",
+      "classes": [
+        "https://link-para-aula1/",
+        "https://link-para-aula2/"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Educação Financeira 2",
+      "description": "Curso sobre educação financeira intermediario",
+      "image": "https://link-para-a-imagem/",
+      "teacherName": "Maria",
+      "classes": [
+        "https://link-para-aula1/",
+        "https://link-para-aula2/"
+      ]
+    }
+  ]
+}
