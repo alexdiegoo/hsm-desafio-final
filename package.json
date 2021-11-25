@@ -1,0 +1,20 @@
+{
+  "name": "hsm-desafio-final",
+  "version": "1.0.0",
+  "description": "Desafio Final",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexdiegoo/hsm-desafio-final.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexdiegoo/hsm-desafio-final/issues"
+  },
+  "homepage": "https://github.com/alexdiegoo/hsm-desafio-final#readme"
+}
