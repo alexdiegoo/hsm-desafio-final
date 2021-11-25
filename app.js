@@ -1,4 +1,5 @@
 const readline = require('readline-sync');
+const createCourse = require('./createCourse');
 const readCourse = require('./readCourse');
 
 while(true) {
@@ -16,6 +17,7 @@ while(true) {
   const option = Number(readline.question("Escolha uma opcao: "));
 
   if(option === 0) break;
+  else if(option === 1) createCourse();
   else if(option === 3) readCourse();
   else console.log("Digite um opcao valida!");
 }
