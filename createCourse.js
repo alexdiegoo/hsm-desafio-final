@@ -2,19 +2,17 @@ const fs = require('fs');
 const readline = require('readline-sync');
 
 function saveToDatabase(course) {
-  fs.readFile('./database.json', (err, data) => {
-    if(err) console.log("Houve um erro: " + err);
+  try {
+    const data = fs.readFileSync('./database.json');
+    const db = JSON.parse(data);
+    db.courses.push(course);
 
-    else {
-      const db = JSON.parse(data);
-      db.courses.push(course);
+    const json = JSON.stringify(db, null, 2);
+    fs.writeFileSync('./database.json', json);
+  } catch(err) {
+    console.log("Houve um erro ao criar o curso. " + err);
+  }
 
-      const json = JSON.stringify(db, null, 2);
-      fs.writeFile('./database.json', json, 'utf-8', (err) => {
-        if(err) console.log("Houve um erro ao gravar: " + err);
-      });
-    }
-  })
 }
 
 function createCourse() {
