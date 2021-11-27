@@ -11,9 +11,9 @@ function deleteCourse() {
 
   try {
     const db = JSON.parse(fs.readFileSync('./database.json'));
-    const found = db.courses.find(courseArray => courseArray.id === id);
+    const findCourse = db.courses.find(course => course.id === id);
 
-    if (found === undefined) return console.log(`Curso com id:${id} não encontrado!`);
+    if(findCourse === undefined) return console.log(`Curso com id ${id} não encontrado!`);
 
     db.courses = db.courses.filter(courseArray => courseArray.id != id);
 
