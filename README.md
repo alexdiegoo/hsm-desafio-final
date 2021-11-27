@@ -15,6 +15,6 @@ seguintes informações:
 Código entregue no Github.
 - [x] Função de criar curso.
 - [x] Função de exibir um curso escolhido.
-- [ ] Função de atualizar um curso escolhido.
-- [ ] Função de deletar um curso escolhido.
-- [ ] Função de listar todos os cursos.
+- [x] Função de atualizar um curso escolhido.
+- [x] Função de deletar um curso escolhido.
+- [x] Função de listar todos os cursos.
