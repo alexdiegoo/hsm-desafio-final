@@ -19,6 +19,7 @@ function updateCourse() {
   const image = readline.question('Caminho da imagem: ');
   const teacherName = readline.question('Nome do professor: ');
   const classes = [];
+  const updateDate = Date.now();
 
   while(true) {
     let classLink = readline.question("Digite o link da aula para adicionar ( Digite 'q' para encerrar)");
@@ -34,7 +35,9 @@ function updateCourse() {
     description,
     image,
     teacherName,
-    classes
+    classes,
+    creationDate: findCourse.creationDate,
+    updateDate
   }
 
   // Para atualizar, passar um segundo parametro como true
