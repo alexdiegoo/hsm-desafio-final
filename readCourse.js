@@ -15,6 +15,8 @@ function readCourse() {
 
   if(findCourse === undefined) return console.log(`Curso com id ${id} não encontrado!`);
 
+  const date = new Date(findCourse.creationDate);
+
   console.log(`
   CURSO ID: ${id}:
   TITULO: ${findCourse.title}
@@ -22,6 +24,8 @@ function readCourse() {
   IMAGEM: ${findCourse.image}
   PROFESSOR: ${findCourse.teacherName}
   LINK DE AULA(S): ${findCourse.classes}
+  DATA DE CRIACAO: ${date.toString()}
+  ${findCourse.updateDate ? `DATA DE MODIFICACAO: ${new Date(findCourse.updateDate).toString()}` : ''}
   `);
 }
 

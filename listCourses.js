@@ -10,7 +10,17 @@ function listCourse() {
   const courses = db.courses;
 
   for(let i = 0; i < courses.length; i++) {
-    console.log(courses[i]);
+    const course = courses[i];
+    console.log(`
+    ID: ${course.id}
+    TITULO: ${course.title}
+    DESCRICAO: ${course.description}
+    IMAGEM: ${course.image}
+    PROFESSOR: ${course.teacherName}
+    LINK DE AULA(S): ${course.classes}
+    DATA DE CRIACAO: ${new Date(course.creationDate).toString()}
+    ${course.updateDate ? `DATA DE MODIFICACAO: ${new Date(course.updateDate).toString()}` : ''}
+    \n`);
   }
 }
 

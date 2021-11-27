@@ -9,7 +9,8 @@
       "classes": [
         "https://link-para-aula1/",
         "https://link-para-aula2/"
-      ]
+      ],
+      "creationDate": 1637976756445
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "classes": [
         "https://link-para-aula1/",
         "https://link-para-aula2/"
-      ]
+      ],
+      "creationDate": 1637976756445
     }
   ]
 }

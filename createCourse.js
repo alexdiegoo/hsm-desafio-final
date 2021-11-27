@@ -13,6 +13,7 @@ function createCourse() {
   const image = readline.question("Digite o caminho da imagem: ");
   const teacherName = readline.question("Digite o nome do professor: ");
   const classes = [];
+  const creationDate = Date.now();
 
   while(true) {
     let classLink = readline.question("Digite o link da aula para adicionar ( Digite 'q' para encerrar)");
@@ -28,7 +29,8 @@ function createCourse() {
     description,
     image,
     teacherName,
-    classes
+    classes,
+    creationDate
   }
 
   saveToDatabase(course);
