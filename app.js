@@ -2,6 +2,7 @@ const readline = require('readline-sync');
 const createCourse = require('./createCourse');
 const readCourse = require('./readCourse');
 const updateCourse = require('./updateCourse');
+const deleteCourse = require('./deleteCourse');
 
 while(true) {
   console.log(`
@@ -21,5 +22,6 @@ while(true) {
   else if(option === 1) createCourse();
   else if(option === 2) updateCourse();
   else if(option === 3) readCourse();
+  else if(option === 4) deleteCourse();
   else console.log("Digite um opcao valida!");
 }
